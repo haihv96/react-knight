@@ -289,7 +289,12 @@ module.exports = {
           {
             test: sassRegex,
             exclude: sassModuleRegex,
-            use: getStyleLoaders({ importLoaders: 2 }, 'sass-loader'),
+            use: getStyleLoaders({
+                importLoaders: 2,
+                modules: true,
+                sourceMap: true,
+                localIdentName: "[local]___[hash:base64:5]",
+            }, 'sass-loader'),
           },
           // Adds support for CSS Modules, but using SASS
           // using the extension .module.scss or .module.sass
