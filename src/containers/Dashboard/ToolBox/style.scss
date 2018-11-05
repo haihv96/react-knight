@@ -1,0 +1,36 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/global';
+
+.toolbox {
+  height: 100%;
+  background: $light;
+  padding: 20px 10px;
+
+  .draw_select_container {
+    background: $light_white;
+    border: 1px dashed $grey;
+    border-radius: 8px;
+    padding: 15px 10px;
+
+    .title {
+      margin-bottom: 10px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+  }
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: inline-block;
+  border: solid 1px $black;
+  background: $white;
+  cursor: pointer;
+  position: relative;
+
+  .type {
+    @include abs-center;
+  }
+}

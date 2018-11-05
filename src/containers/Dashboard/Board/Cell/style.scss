@@ -1,0 +1,27 @@
+@import '../../../../assets/styles/vars';
+
+$cell_border: $grey;
+
+.cell_style {
+  background: white;
+  border-left: 1px dotted $cell_border;
+  border-top: 1px dotted $cell_border;
+}
+
+.border_right {
+  border-right: 1px dotted $cell_border;
+}
+
+.border_bottom {
+  border-bottom: 1px dotted $cell_border;
+}
+
+.over_style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: $red;
+  opacity: .5;
+}

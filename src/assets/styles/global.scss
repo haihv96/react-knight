@@ -1,0 +1,21 @@
+.display_table {
+  display: table;
+  vertical-align: top;
+}
+
+.table_cell {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.table_row {
+  display: table-row;
+  vertical-align: top;
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

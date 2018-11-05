@@ -1,11 +1,12 @@
 import React from 'react'
 import {Route, Switch} from 'react-router'
-import Home from '../Home'
+import Dashboard from '../Dashboard'
+import '../../assets/styles/app.css'
 
 const App = () => (
     <div>
         <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Dashboard}/>
             <Route exact path="/test" render={() => (<div>/test</div>)}/>
             <Route render={() => (<div>Miss</div>)}/>
         </Switch>
